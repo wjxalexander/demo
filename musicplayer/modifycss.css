@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    width:100%;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(#FC354C,#0ABFBC);
+}
+.layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.playarea{
+    position: relative;
+    width: 500px;
+    height: 180px;
+    background-color:whitesmoke; 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1), 0px 2px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.pic{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    animation: rotate linear infinite 20s;
+    animation-play-state: paused
+}
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(-360deg);
+    }
+}
+.control{
+    position: absolute;
+    left: 200px;
+    top:20px;
+    font-size: 28px;
+}
+.fas{
+    margin-right: 12px;
+}
+.info{
+    position: absolute;
+    right: 50px;
+    top:20px;
+    font-size: 14px;
+}
+.progress{
+    position: absolute;
+    left: 200px;
+    bottom: 20px;
+    width: 250px;
+}
+.progress .playbar
+{   
+    position: relative;
+    height: 3px;
+    background-color: grey;
+    width: 100%
+}
+.progress .playbarnow{
+    position: relative;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    z-index: 1;
+}
+.progress .time{
+    text-align: right;
+}
+.vol{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    top: 80px;
+    left: 200px;
+    font-size: 16px;
+}
+#volcontrol{
+    width: 126px;
+}
+.musiclist{
+    width: 500px;
+    color: whitesmoke;
+}
+.musiclist .songtitle{
+    position: relative;
+    padding: 5px 5px 5px 20px;
+    height: 30px;
+    border-bottom : 0.1px solid whitesmoke;
+    border-left: 0.1px solid whitesmoke;
+    border-right: 0.1px solid whitesmoke;
+    justify-content: center;
+}
+.musiclist .songtitle:hover{
+    background: rgba(182, 185, 181, 0.4);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Music Player</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="modifycss.css">
+</head>
+<body>
+    <div class="layout">
+        <div class="playarea">
+            <div class="pic"></div>
+            <div class="control">
+                <span class="back">
+                    <i class="fas fa-step-backward"></i>
+                </span>
+                <span class="play">
+                 <i class="fas fa-play"></i>
+                <!-- <i class="fas fa-pause"></i>-->
+                </span>
+                <span class="forward">
+                    <i class="fas fa-step-forward"></i>
+                </span>
+            </div>
+            <div class="vol">
+                 <i class="fas fa-volume-up"></i>
+                <input type="range" min = '0' max="1" name="vol" step = '0.01' id="volcontrol" style="display: none;">
+            </div>
+            <div class="info">
+                <div class="title">hello</div>
+                <div class="author">adle</div>
+            </div>
+            <div class="progress">
+                <div class="playbar">
+                    <div class="playbarnow"></div>
+                    <div class="playbar2"></div>
+                </div>
+                <div class="time">0:00</div>
+            </div>
+        </div>
+        <ul class="musiclist">
+        </ul>
+    </div>
+</body>
+<script src="./player.js"></script>
+</html>
